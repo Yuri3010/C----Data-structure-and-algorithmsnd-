@@ -27,7 +27,7 @@ int findMaxRec(int A[], int n)
 {
     // if n = 0 means whole array has been traversed
     if (n == 1) return A[0];
-    return max(A[n-1], findMaxRec(A, n-1));
+    else return max(A[n-1], findMaxRec(A, n-1));
 }
 
 int sum(int A[], int n) {
